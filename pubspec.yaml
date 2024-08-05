@@ -5,6 +5,7 @@ description: A Flutter plugin for controlling the camera. Supports previewing
 repository: https://github.com/flutter/packages/tree/main/packages/camera/camera
 issue_tracker: https://github.com/flutter/flutter/issues?q=is%3Aissue+is%3Aopen+label%3A%22p%3A+camera%22
 version: 0.11.0+2 
+publish_to: none
 
 environment:
   sdk: ^3.2.3
@@ -14,23 +15,17 @@ flutter:
   plugin:
     platforms:
       android:
-        default_package: camera_android_camerax
-      ios:
-        default_package: camera_avfoundation
-      web:
-        default_package: camera_web
+        default_package: camera_android_camerax 
 
 dependencies:
   camera_android_camerax:  
     git:
-      url: https://github.com/username/repository
-      ref: main  # Nhánh, tag, hoặc commit 
-  camera_avfoundation: ^0.9.15
+      url: https://github.com/dothanhbinh41/camera_android_camerax
+      ref: main  # Nhánh, tag, hoặc commit  
   camera_platform_interface: 
     git:
-      url: https://github.com/username/repository
-      ref: main  # Nhánh, tag, hoặc commit 
-  camera_web: ^0.3.3
+      url: https://github.com/dothanhbinh41/camera_platform_interface
+      ref: main  # Nhánh, tag, hoặc commit  
   flutter:
     sdk: flutter
   flutter_plugin_android_lifecycle: ^2.0.2
