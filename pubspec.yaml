@@ -15,7 +15,11 @@ flutter:
   plugin:
     platforms:
       android:
-        default_package: camera_android_camerax 
+        default_package: camera_android_camerax
+      ios:
+        default_package: camera_avfoundation
+      web:
+        default_package: camera_web
 
 dependencies:
   camera_android_camerax:  
@@ -25,6 +29,14 @@ dependencies:
   camera_platform_interface: 
     git:
       url: https://github.com/dothanhbinh41/camera_platform_interface
+      ref: main  # Nhánh, tag, hoặc commit  
+  camera_avfoundation: 
+    git:
+      url: https://github.com/dothanhbinh41/camera_avfoundation
+      ref: main  # Nhánh, tag, hoặc commit  
+  camera_web: 
+    git:
+      url: https://github.com/dothanhbinh41/camera_web
       ref: main  # Nhánh, tag, hoặc commit  
   flutter:
     sdk: flutter
