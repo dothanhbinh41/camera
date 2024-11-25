@@ -3,7 +3,7 @@ description: A Flutter plugin for controlling the camera. Supports previewing
   the camera feed, capturing images and video, and streaming image buffers to
   Dart.
 repository: https://github.com/dothanhbinh41/camera 
-version: 0.11.0+2 
+version: 0.11.0+3 
 publish_to: none
 
 environment:
@@ -19,6 +19,8 @@ flutter:
         default_package: camera_avfoundation
       web:
         default_package: camera_web
+      windows:
+        default_package: camera_windows
 
 dependencies:
   camera_android_camerax:  
@@ -37,6 +39,11 @@ dependencies:
     git:
       url: https://github.com/dothanhbinh41/camera_web
       ref: main  # Nhánh, tag, hoặc commit  
+  camera_windows:
+    git:
+      url: https://github.com/Edutalk-Labs/camera_windows
+      ref: main
+
   flutter:
     sdk: flutter
   flutter_plugin_android_lifecycle: ^2.0.2
