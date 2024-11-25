@@ -42,7 +42,7 @@ dependencies:
   camera_windows:
     git:
       url: https://github.com/Edutalk-Labs/camera_windows
-      ref: main
+      ref: master
 
   flutter:
     sdk: flutter
